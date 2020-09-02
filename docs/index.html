@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+</head>
+<body>
+
+
+  <nav>
+    <a href="#/">分享</a>
+    <a href="ted.md">分享2</a>
+  </nav>
+
+
+  <div id="app">加载中..</div>
+  <script>
+    window.$docsify = {
+      name: '陌言取经',//也可以包含自定义 HTML 代码来方便地定制
+      repo: '',
+      coverpage: true,//true 开启封面,，也可以自定义文件名
+      loadSidebar: true,//左侧导航栏
+      autoHeader:true,
+      loadNavar:true,//自定义导航栏  右上角显示
+      subMaxLevel: 2,
+      // themeColor: '#3F51B5',//替换主题色。利用 CSS3 支持变量的特性，
+      auto2top:true, //切换页面后是否自动跳转到页面顶部
+      mergeNavbar: true,//小屏设备下合并导航栏到侧边栏
+      // notFoundPage: '_404.md',
+
+      plugins:[
+      // 给每个页面的末尾加上 footer
+      function(hook) {
+      var footer = [
+        '<hr/>',
+        '<footer>',
+        '<span> <img href="">图片</img> </span>',
+        '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+        '</footer>'
+      ].join('');
+
+      hook.afterEach(function(html) {
+        return html + footer;
+      });
+    }
+      ]
+
+
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js" data-ga="UA-XXXXX-Y"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/ga.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+</body>
+</html>
