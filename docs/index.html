@@ -10,15 +10,20 @@
 </head>
 <body>
 
+  <!-- <nav>
+    <img src="self/wet.jpeg" width="140" height="140"/>
+  </nav> -->
+
   <div id="app">加载中..</div>
   <script>
     window.$docsify = {
       name: '陌言取经',//也可以包含自定义 HTML 代码来方便地定制
       repo: '',
-      coverpage: false,//true 开启封面,，也可以自定义文件名
-      loadSidebar: '_sidebar.md',//左侧导航栏
+      coverpage: true,//true 开启封面,，也可以自定义文件名
+      onlyCover:true,//只在访问主页时加载封面。
+      loadSidebar: true,//左侧导航栏
       autoHeader:true,
-      loadNavbar:true,//自定义导航栏  右上角显示
+      // loadNavbar:true,//自定义导航栏  右上角显示
       subMaxLevel: 2,
       // themeColor: '#3F51B5',//替换主题色。利用 CSS3 支持变量的特性，
       auto2top:true, //切换页面后是否自动跳转到页面顶部
@@ -31,7 +36,7 @@
       var footer = [
         '<hr/>',
         '<footer>',
-        '<span> <img href="">图片</img> </span>',
+        '<span> <img src="image/wt.jpeg" width="100" height="100"/> </span>',
         '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
         '</footer>'
       ].join('');
