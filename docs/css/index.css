@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* footer 区左右划分 */
+.con{width: 500px;height: 400px;margin: 0 auto;}
+.con div{width: 50%;height: 100%;}
+.a{float: left;}
+.b{float: left;color: teal;}

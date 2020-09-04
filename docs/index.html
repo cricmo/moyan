@@ -7,13 +7,9 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="css/index.css"> <!-- 自定义css -->
 </head>
 <body>
-
-  <!-- <nav>
-    <img src="self/wet.jpeg" width="140" height="140"/>
-  </nav> -->
-
   <div id="app">加载中..</div>
   <script>
     window.$docsify = {
@@ -29,6 +25,7 @@
       auto2top:true, //切换页面后是否自动跳转到页面顶部
       mergeNavbar: true,//小屏设备下合并导航栏到侧边栏
       // notFoundPage: '_404.md',
+      ga: 'UA-XXXXX-Y',
 
       plugins:[
       // 给每个页面的末尾加上 footer
@@ -36,8 +33,10 @@
       var footer = [
         '<hr/>',
         '<footer>',
-        '<span> <img src="image/wt.jpeg" width="100" height="100"/> </span>',
-        '<span>Proudly published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</span>',
+        '<div>',
+        '<div class="a"><img src="image/wt.jpeg" width="100" height="100"/>&#160;&#160;&#160; </div>',
+        '<div class="b"><space/>&#160;&#160;&#160;&#160; 我是陌言，取经的路上从不言弃！</div>',
+        '</div>',
         '</footer>'
       ].join('');
 
@@ -46,7 +45,8 @@
       });
     }
       ]
-
+      // '<span> <img src="image/wt.jpeg" width="100" height="100"/> </span>',
+      //   '<span>我是陌言，取经的路上从不言弃！ttes</span>',
 
     }
   </script>
