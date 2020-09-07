@@ -18,7 +18,7 @@
 
 <font face="黑体" color=red size=4> 欢迎加入我们，打造你的流金管道，成就你的私域营销！！</font>
 
->  个人号：ruisi015
+<font face="黑体" color=blue size=4>微联 ruisi015，可获取价值万元的两本电子书！（注明电子书）</font>
 
 <img src="image/wt.jpeg" width = 125 height = 125 />
 
