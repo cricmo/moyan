@@ -14,11 +14,12 @@
   <script>
     window.$docsify = {
       name: '陌言取经',//也可以包含自定义 HTML 代码来方便地定制
-      repo: '',
+      // repo: '',
+      logo: '/image/tx.jpg',//在侧边栏中出现的网站图标，你可以使用CSS来更改大小
       coverpage: true,//true 开启封面,，也可以自定义文件名
       onlyCover:true,//只在访问主页时加载封面。
       loadSidebar: true,//左侧导航栏
-      autoHeader:true,
+      autoHeader:false,//同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
       // loadNavbar:true,//自定义导航栏  右上角显示
       subMaxLevel: 2,
       // themeColor: '#3F51B5',//替换主题色。利用 CSS3 支持变量的特性，
@@ -26,6 +27,7 @@
       mergeNavbar: true,//小屏设备下合并导航栏到侧边栏
       // notFoundPage: '_404.md',
       ga: 'UA-XXXXX-Y',
+      topMargin: 90, // default: 0   内容页在滚动到指定的锚点时，距离页面顶部有一定空间。当你使用 固定页头 布局时这个选项很有用，可以让你的锚点对齐标题栏。
 
       plugins:[
       // 给每个页面的末尾加上 footer
