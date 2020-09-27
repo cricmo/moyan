@@ -2,7 +2,7 @@
 <!-- <img src="image/tx.jpg" width="150" height="150"/> -->
 
 
-* [陌言取经：推广引流经]<!-- (README.md) -->
+* 陌言取经：推广引流经<!-- (README.md) -->
     * [为什么那么多人追求裂变引流？](drainage/liebian)
     * [蛋糕店怎样进行推广引流？](drainage/dangao)
     * [理发店如何推广引流？](drainage/meifa)
